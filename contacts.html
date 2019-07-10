@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <title>Agricultural Machinery</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="./contacts.css">
         <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../Machinery/fontawesome-free-5.9.0-web/css/all.css">
 
@@ -48,7 +48,7 @@
         
                         <ul class="header-nav">
                             <li class="nav-item">
-                                <a href="index.html" class="nav-link">Головна</a>
+                                <a href="./index.html" class="nav-link">Головна</a>
                             </li>
                             <li class="nav-item">
                                 <a href="./aboutCompany.html" class="nav-link">Про компанію</a>
@@ -74,104 +74,92 @@
         </header>
 
         <!-- Slider -->
-        <section class="section">
+        <section class="section-slide">
                
         </section>
 
+        <!-- Center Main information -->
 
-        <!-- Production -->
+        <section class="main-information">
+            <div class="main-information-inner">
 
-        <section class="production">
-            <div class="production-back">
-
-                <div class="container --production-back">
-                    <h1 class="production-title">Продукція</h1>
-                    <div class="production-inner">
-                        
-                        <div class="production-item">
-                            <img src="../Machinery/images/vehicle/M700 AHWI-cr-300x220.jpg" alt="" class="production-item-photo">
-                            <a href="" class="production-item-btn">Навісні Мульчери</a>                   
-                        </div>
-                        <div class="production-item">
-                            <img src="../Machinery/images/vehicle/RAPTOR 800-cr-300x220.jpg" alt="" class="production-item-photo">
-                        <a href="" class="production-item-btn">Самохідні Мульчери</a>                   
-                    </div>
-                    <div class="production-item">
-                        <img src="../Machinery/images/vehicle/RF1000G_7-cr-300x220.jpg" alt="" class="production-item-photo">
-                        <a href="" class="production-item-btn">Ротоватори</a>                   
-                    </div>
-                    <div class="production-item">
-                        <img src="../Machinery/images/vehicle/csm_M450e_1100-2-cr-300x220.jpg" alt="" class="production-item-photo">
-                        <a href="" class="production-item-btn">Мульчерні фрези</a>                   
-                    </div>
-                    <div class="production-item">
-                        <img src="../Machinery/images/vehicle/csm_M450e_1100-2-cr-300x220.jpg" alt="" class="production-item-photo">
-                        <a href="" class="production-item-btn">Мульчерні фрези</a>                   
-                    </div>
-                    <div class="production-item">
-                        <img src="../Machinery/images/vehicle/csm_M450e_1100-2-cr-300x220.jpg" alt="" class="production-item-photo">
-                        <a href="" class="production-item-btn">Мульчерні фрези</a>                   
-                    </div>
-                </div>
+                <!-- <div class="breadcrumb">
+                    <span>Головна/</span><span>Про компанію</span>
+                </div> -->
+                <!-- Aside links -->
+                <nav class="nav-aside">
+                    <div class="nav-aside-title">Продукція</div>
+                    
+                    <ul class="nav-aside-list">
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Навісні мульчери</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Самохідні мульчери</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Ротоватори</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Техніка для обробки грунту</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Посівна техніка</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Внесення добрив</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Машина для захисту рослин</a>
+                        </li>
+                        <li class="nav-aside-list-item">
+                            <a href="#" class="list-item-link">Кормозбиральна техніка</a>
+                        </li>
+                    
+                    </ul>
+                </nav>
                 
-            </div>
-        </div>
+                <!-- Content -->
+                <article class="main-content">
+                    <div class="container-content">
+                        
+                        
+                    </div>
+                </article>
         </section>
 
 
+        <!-- Write to us(form) Contact-->
 
-        <!-- Adventages -->
+        <section class="contact">  
+            <div class="container">
+                <h1 class="contact-title">Напишіть нам</h1>
+                
 
-        <section class="adventages">
-                <div class="container">
-                    <h1 class="adventages-title">Переваги</h1>
-                    <div class="adventages-inner">
-                        <div class="adventages-item">
-                            <img src="../Machinery/images/Adventages/ic_1.png" alt="" class="item-photo">
-                            <div class="item-info">
-                                <h2 class="info-title">Конкурентні ціни</h2>
-                                <p class="info-text">Ми працює з виробниками техніки без посередників</p>
-                            </div>
+                <form class="form" action="" method="post">
+                    <div class="form-inner">
+                        <textarea placeholder="Текст повідомлення" class="form-textarea" name="200" id=""></textarea>
+                        <div class="form-inputs">
+                            <input type="text" name="firstName" id="firstName" class="input --first-name" placeholder="Ваше ім'я*" required>
+                            <input type="email" name="lastName" id="lastNam" class="input --last-name" placeholder="Ваш email*"required>
+                            <input type="tel" name="telephone" id="telephone" class="input --telephone-number" placeholder="Ваш телефон*" required>
+                            <input type="submit" value="Відправити" class="form-btn">
                         </div>
-                        <div class="adventages-item">
-                            <img src="../Machinery/images/Adventages/ic_2.png" alt="" class="item-photo">
-                            <div class="item-info">
-                                <h2 class="info-title">ГАРАНТІЯ ТА СЕРВІС</h2>
-                                <p class="info-text">Ми гарантуємо сервісне обслуговування у всіх регіонах України</p>
-                            </div>
-                        </div>
-                        <div class="adventages-item">
-                            <img src="../Machinery/images/Adventages/ic_3.png" alt="" class="item-photo">
-                            <div class="item-info">
-                                <h2 class="info-title">ШИРОКИЙ АСОРТИМЕНТ ТЕХНІКИ</h2>
-                                <p class="info-text">Різні моделі на будь-який смак</p>
-                            </div>
-                        </div>
-                        <div class="adventages-item">
-                            <img src="../Machinery/images/Adventages/ic_4.png" alt="" class="item-photo">
-                            <div class="item-info">
-                                <h2 class="info-title">ЗАПАСНІ ЗАПЧАСТИНИ</h2>
-                                <p class="info-text">У продажу є запасні оригінальні запчастини</p>
-                            </div>
-                        </div>
-                        <div class="adventages-item">
-                            <img src="../Machinery/images/Adventages/ic_5.png" alt="" class="item-photo">
-                            <div class="item-info">
-                                <h2 class="info-title">РОЗГАЛУЖЕНА МЕРЕЖА</h2>
-                                <p class="info-text">У всіх регіонах України є техніка на складі</p>
-                            </div>
-                        </div>
-                        <div class="adventages-item">
-                            <img src="../Machinery/images/Adventages/ic_6.png" alt="" class="item-photo">
-                            <div class="item-info">
-                                <h2 class="info-title">ШВИДКА ДОСТАВКА</h2>
-                                <p class="info-text">Ми співпрацюємо з основними службами доставки</p>
-                            </div>
-                        </div>
+    
 
                     </div>
-                </div>
-            </section>
+                </form>
+            
+            
+            
+            </div>
+
+
+
+
+        </section>
+
+
 
 
 
@@ -230,9 +218,6 @@
                     © AB Технік Україна. Всі права захищені
                 </p>
             </div>
-
-
-
             <!-- Scripts -->
             <script
             src="https://code.jquery.com/jquery-3.4.1.js"
