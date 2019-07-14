@@ -176,12 +176,12 @@ span {
 .nav-link {
     text-decoration: none;
     color: #ffffff;
-    transition: all .2s linear;
+    transition: all .2s ease;
     position: relative;
 
 }
 
-.nav-link::before {
+/* .nav-link::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -190,7 +190,8 @@ span {
     background: #ffffff;
     z-index: 1;
     top: -5px;
-}
+    
+} */
 
 .nav-link::after {
     position: absolute;
@@ -201,6 +202,9 @@ span {
     background: #ffffff;
     z-index: 1;
     bottom: -5px;
+    /* opacity: 0; */
+    transition: all 5.2s;
+
 }
 
 .nav-link:hover {
@@ -209,7 +213,54 @@ span {
 .nav-link:hover::after, .nav-link:hover::before {
     background: gold;
     display: block;
+    /* opacity: 1; */
 }
+
+/* Nav Toggle */
+
+.nav-toggle {
+    color: #ffffff;
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    padding: 19px 0;
+    position: relative;
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+
+.nav-toggle-burger {
+    background-color: #ffffff;
+    display: block;
+    width: 30px;
+    height: 3px;
+    position: absolute;
+    /* right: 0; */
+    /* left: 5%; */
+    /* top: 0; */
+    margin: 14px 0 0 50px;
+    
+}
+
+.nav-toggle-burger::after, .nav-toggle-burger::before {
+    content: "";
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    height: 3px;
+
+}
+.nav-toggle-burger::before {
+    top: -8px;
+}
+
+.nav-toggle-burger::after {
+    bottom: -8px;
+}
+
 
 /* Slider */
 .section-slide {
@@ -547,9 +598,64 @@ span {
 
 /* large devices(desktop) */
 @media (max-width: 992px) {
+    /* Navigation */
+    .header-information {
+        justify-content: space-evenly;
+    }
+    .header-logo {
+        margin-right: 15px;
+    }
+    .header-phone {
+        margin: 10px 0;
+    }
+
+    .header-languages {
+        margin: 17px 0;
+    }
+    .header-languages-changes:first-child {
+        margin-left: 35px;
+    }
+    
+    
     /* navigation */
 
+    .nav {
+        height: auto;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+
     .header-nav {
+        display: none;
+        padding: 0;
+    }
+    .header-nav.active {
+        display: block;
+    }
+    
+    .nav-item {
+        width: 100%;
+        text-align: center;
+        transition: border .2s ease;
+    }
+    .nav-item:first-child {
+        border-top: 2px solid #ffffff;
+    }
+
+    .nav-item:hover {
+        border-bottom: 2px solid gold;
+    }
+
+    /* .nav-item:hover .nav-link {
+        color: gold;
+    } */
+    
+    .nav-link:hover {
+        color: gold;
+    }
+    
+    .nav-link:hover::after {
         display: none;
     }
 

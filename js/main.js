@@ -5,7 +5,9 @@ $(function() {
     //     slidesToShow: 1,
     //     slidesToScroll: 1
     // })
-
-
+    
+    $('#nav-toggle').on('click', function(event) {
+        $('.header-nav').toggleClass('active');
+    })
 
 })
