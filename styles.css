@@ -150,10 +150,21 @@ span {
 /* Navigation */
 
 .nav {
+    /* position: fixed; */
     /* background-color: black; */
     background-color: #181b18;
-    /* width: 100%; */
+    width: 100%;
     height: 70px;
+}
+/* Fixed scroll */
+.fixed {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    transform: translate3d(0, 0, 0);
+    box-shadow:  2px 5px 1px rgba(34, 33, 33, 0.3);
 }
 
 .header-nav {
@@ -214,11 +225,29 @@ span {
 .nav-link:hover {
     color: gold;
 }
-.nav-link:hover::after, .nav-link:hover::before {
+.nav-link:hover::after,
+.nav-link:hover::before {
     background: gold;
     display: block;
     /* opacity: 1; */
 }
+
+/* Active class on click */
+
+.nav-link.active {
+    color: gold;
+}
+
+.nav-link.active::after {
+    background: gold;
+    display: block;
+
+}
+
+
+
+
+
 
 /* Nav Toggle */
 
