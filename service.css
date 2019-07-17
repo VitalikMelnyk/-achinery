@@ -1,0 +1,44 @@
+.content-title {
+    /* text-transform: uppercase; */
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.services-photo {
+    width: 100%;
+}
+
+
+/* Media queries for different devices */
+
+
+/* Extra large */
+@media (max-width: 1230px) {
+   
+}
+
+/* large devices(desktop) */
+@media (max-width: 992px) {
+
+    
+}
+
+/* medium devices(tablets) */
+@media (max-width: 767px) {
+    /* Main-content */
+
+
+}
+
+/* small devices(phones) */
+@media (max-width: 576px) {
+    
+
+    /* Main-content */
+    /* Text */
+    .content-title {
+        font-size: 20px;
+    }
+
+
+}
