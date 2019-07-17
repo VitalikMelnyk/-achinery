@@ -1,0 +1,74 @@
+/* Catalog of goods */
+.catalog-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.catalog-item {
+    display: flex;
+    flex-direction: column;
+    /* width: 32%; */
+    max-width: 300px;
+    margin: 20px 7px 20px;
+}
+.catalog-item:hover {
+    -webkit-box-shadow: 9px 10px 17px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 9px 10px 17px -1px rgba(0,0,0,0.75);
+    box-shadow: 9px 10px 17px -1px rgba(0,0,0,0.75);
+}
+
+.catalog-item-photo {
+    width: 100%;
+    height: auto;
+}
+
+.catalog-item-link {
+    /* text-transform: uppercase; */
+    text-decoration: none;
+    font-size: 17px;
+    background: #3aa83d;
+    color: #171a17;
+    text-align: center;
+    padding: 15px 10px;
+ 
+    transition: background .2s ease;
+    transition: color .2s ease;
+}
+
+.catalog-item-link:hover {
+    background: #118a15;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+/* Media queries for different devices */
+
+
+/* Extra large */
+@media (max-width: 1230px) {
+   
+}
+
+/* large devices(desktop) */
+@media (max-width: 992px) {
+
+    
+}
+
+/* medium devices(tablets) */
+@media (max-width: 767px) {
+    /* Main-content */
+
+
+}
+
+/* small devices(phones) */
+@media (max-width: 576px) {
+    
+
+    /* Main-content */
+
+
+}

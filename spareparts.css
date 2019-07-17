@@ -1,0 +1,48 @@
+.content-title{
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.paragraph-text {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+
+/* Media queries for different devices */
+
+
+/* Extra large */
+@media (max-width: 1230px) {
+   
+}
+
+/* large devices(desktop) */
+@media (max-width: 992px) {
+
+    
+}
+
+/* medium devices(tablets) */
+@media (max-width: 767px) {
+    /* Main-content */
+
+
+}
+
+/* small devices(phones) */
+@media (max-width: 576px) {
+    
+
+    /* Main-content */
+    /* Text */
+    .content-title {
+        font-size: 26px;
+    }
+    .paragraph-text {
+        font-size: 14px;
+    }
+
+
+}

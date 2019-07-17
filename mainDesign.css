@@ -398,50 +398,6 @@ span {
     margin: 10px 45px;
 
 }
-/* Catalog of goods */
-.catalog-inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.catalog-item {
-    display: flex;
-    flex-direction: column;
-    /* width: 32%; */
-    max-width: 300px;
-    margin: 20px 7px 20px;
-}
-.catalog-item:hover {
-    -webkit-box-shadow: 9px 10px 17px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 9px 10px 17px -1px rgba(0,0,0,0.75);
-    box-shadow: 9px 10px 17px -1px rgba(0,0,0,0.75);
-}
-
-.catalog-item-photo {
-    width: 100%;
-    height: auto;
-}
-
-.catalog-item-link {
-    /* text-transform: uppercase; */
-    text-decoration: none;
-    font-size: 17px;
-    background: #3aa83d;
-    color: #171a17;
-    text-align: center;
-    padding: 15px 10px;
- 
-    transition: background .2s ease;
-    transition: color .2s ease;
-}
-
-.catalog-item-link:hover {
-    background: #074709;
-    color: #ffffff;
-    text-decoration: underline;
-}
-
 
 /* Contact */
 .contact {
@@ -784,10 +740,10 @@ span {
     /* Form  */
 
     .form-textarea {
-        margin: 0 0 30px;
+        margin: 0 16px 30px;
     }
     .form-inputs {
-        margin: 0;
+        margin: 0 16px;
     }
 
 }
