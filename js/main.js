@@ -42,6 +42,23 @@ $(function() {
 
 
 
+    // Goods change on grid or list
+
+    $('.list').on('click', function(event) {
+        event.preventDefault();
+        $('.product-item').removeClass('grid-style');
+        $('.product-item-info').removeClass('grid-style');
+
+    });
+
+    $('.grid').on('click', function(event) {
+        event.preventDefault();
+        $('.product-item').addClass('grid-style');
+        $('.product-item-info').addClass('grid-style');
+    });
+
+
+
 
 
 })

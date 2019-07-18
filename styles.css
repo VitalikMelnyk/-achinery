@@ -366,7 +366,7 @@ span {
     background: url("./images/78340be6a1135340b1105fe57fc42a14.jpg") center no-repeat;
     background-size: cover;
     color: #ffffff;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
 }
 /* .production-back {
     background: rgba(3, 187, 67, 0.2);
